@@ -13,10 +13,11 @@ async function chamarApi() {
     
     const prodpadronizado = PadronizarApi(obj);
     return prodpadronizado;
-
+   }
+        
     console.log(`Não foi possível acessar a API, entrando em contato com os produtos locais!!:`);
     return null;
-   }
+   
     } catch (error) {
     console.log('Erro ao chamar a API:', error);
     return null;
