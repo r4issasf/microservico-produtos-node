@@ -1,0 +1,80 @@
+[
+    {
+        "id": 30,
+        "name": "Blusa de Time Ajax",
+        "price": 150.00,
+        "source": "local"
+    },
+    {
+        "id": 31,
+        "name": "Blusa de Time Santos",
+        "price": 99.90,
+        "source": "local"
+    },
+    {
+        "id": 32,
+        "name": "Tênis Nike Air Max",
+        "price": 350.00,
+        "source": "local"
+    },
+    {
+        "id": 33,
+        "name": "Tênis Nike Air Jordan",
+        "price": 499.90,
+        "source": "local"
+    },
+    {
+        "id": 34,
+        "name": "Blusa de Time Corinthians",
+        "price": 150.00,
+        "source": "local"
+    },
+    {
+        "id": 35,
+        "name": "Blusa de Time Flamengo",
+        "price": 149.90,
+        "source": "local"
+    },
+    {
+        "id": 36,
+        "name": "Chinelo Rider",
+        "price": 79.90,
+        "source": "local"
+    },
+    {
+        "id": 37,
+        "name": "Chinelo Havaianas",
+        "price": 89.90,
+        "source": "local"
+    },
+    {
+        "id": 38,
+        "name": "Blusa de Time Palmeiras",
+        "price": 159.90,
+        "source": "local"
+    },
+    {
+        "id": 39,
+        "name": "Blusa de Time Grêmio",
+        "price": 149.90,
+        "source": "local"
+    },
+    {
+        "id": 40,
+        "name": "Tênis Adidas NMD",
+        "price": 399.90,
+        "source": "local"
+    },
+    {
+        "id": 41,
+        "name": "Tênis Nike Air Max Premium",
+        "price": 499.90,
+        "source": "local"
+    }, 
+    {
+        "id":42,
+        "name":"Blusa de Time Vasco", 
+        "price": 139.90,
+        "source":"local"
+    }
+]
