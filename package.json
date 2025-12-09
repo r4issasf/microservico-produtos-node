@@ -1,0 +1,11 @@
+{
+    "name": "microservico-produtos-node",
+    "version": "1.0.0",
+    "description": "Microserviço de Catálogo de Produtos em Node.js puro, sem frameworks.",
+    "main": "src/index.js",
+    "scripts": {
+        "start": "node src/index.js"
+    },    
+    "author": "Raissa Ferreira",
+    "license": "MIT"
+}

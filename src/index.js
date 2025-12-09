@@ -34,7 +34,7 @@ async function chamarApi() {
    
 async function lerArquivoJson() {  
     try {
-    const text = await fs.readFile('local-products.json', 'utf-8');
+    const text = await fs.readFile('./src/local-products.json', 'utf-8');
     const Dados = JSON.parse(text);
 
     const ProdPadronizado = Dados.map((item) => ({
