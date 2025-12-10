@@ -22,6 +22,7 @@ async function chamarApi() {
     console.log('Erro ao chamar a API:', error);
     return null;
    }
+}
 
    function  PadronizarApi(obj) {
     return obj.map((item) => ({
@@ -31,7 +32,7 @@ async function chamarApi() {
         source: 'API'
         }));
       }
-    }
+    
    
 async function lerArquivoJson() {  
     try {
