@@ -17,6 +17,44 @@ npm start
 
 Servidor estará disponível em: http://localhost:3000/produtos
 
+## 🧪 Testando todos os cenários de fallback
+
+```bash
+# 1️⃣ API funcionando + local funcionando
+# - URL da API correta:
+const API_URL = 'https://fakestoreapi.com/products'
+# - Arquivo local existe
+# - Reinicie o servidor:
+npm start
+# - Acesse:
+http://localhost:3000/produtos
+# Resultado esperado: produtos da API + produtos locais, ordenados por id
+
+# 2️⃣ API falhando + local funcionando (fallback da API)
+# - Modifique a URL da API para inválida:
+const API_URL = 'https://fakestoreapi.com/productsXXX'
+# - Arquivo local ainda existe
+npm start
+http://localhost:3000/produtos
+# Resultado esperado: apenas produtos locais (source: "Local")
+
+# 3️⃣ API funcionando + local ausente ou inválido (fallback do local)
+# - URL da API correta:
+const API_URL = 'https://fakestoreapi.com/products'
+# - Renomeie ou corrompa o arquivo local-products.json
+npm start
+http://localhost:3000/produtos
+# Resultado esperado: apenas produtos da API (source: "API")
+
+# 4️⃣ API falhando + local ausente ou inválido (nenhuma fonte disponível)
+# - URL da API inválida:
+const API_URL = 'https://fakestoreapi.com/productsXXX'
+# - Arquivo local ausente ou inválido
+npm start
+http://localhost:3000/produtos
+# Resultado esperado: 
+# { "error": "Não foi possível obter produtos de nenhuma fonte." }
+
 ## 📬 Exemplos de requisição
 
 GET /produtos  
